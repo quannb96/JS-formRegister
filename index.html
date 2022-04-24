@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Demo Form Register</title>
+  </head>
+  <body>
+    <main>
+      <h1>Register for an Account</h1>
+      <form id="formRegister" action="join.html">
+        <p>
+          <label>E-Mail:</label>
+          <input type="text" id="emailInput" />
+          <span style="color: red" id="emailError">*</span>
+        </p>
+
+        <p>
+          <label>Mobile Phone:</label>
+          <input type="text" id="phoneInput" />
+          <span style="color: red" id="phoneError">*</span>
+        </p>
+
+        <p>
+          <label>Country:</label>
+          <select id="countrySelect">
+            <option value="Please select a country">
+              Please select a country
+            </option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="Mexico">Mexico</option>
+          </select>
+          <span style="color: red" id="countryError">*</span>
+        </p>
+
+        <p>
+          <label>Contact me by:</label>
+          <input type="radio" name="contactMe" value="Text" checked /> Text
+          <input type="radio" name="contactMe" value="Email" /> Email
+          <input type="radio" name="contactMe" value="Don't contact me" /> Don't
+          contact me
+        </p>
+
+        <p>
+          <label>Terms of Service:</label>
+          <input type="checkbox" name="termService" id="termService" /> I accept
+          <span
+            style="color: red; margin-left: 28%"
+            id="termServiceError"
+          ></span>
+        </p>
+
+        <p>
+          <button type="button" id="btnRegister">Register</button>
+
+          <button type="reset" id="btnReset">Reset</button>
+        </p>
+      </form>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

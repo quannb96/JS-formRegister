@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 40%;
+    height: auto;
+    margin: 50px auto;
+    border: 3px solid green;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(116, 240, 147);
+}
+
+h1 {
+    color: green;
+    margin-bottom: 20px;
+}
+
+label {
+    float: left;
+    width: 21%;
+}
+
+label,
+input,
+select,
+br,
+button {
+    margin: 5px;
+}
+
+p {
+    clear: both;
+}
+
+button {
+    width: 40%;
+    border-radius: 5px;
+}
+
+#emailInput,
+#phoneInput,
+#countrySelect {
+    width: 40%;
+}
